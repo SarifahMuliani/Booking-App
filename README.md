@@ -7,40 +7,55 @@ A web-based futsal field booking application built with Laravel. This system all
 ## 📸 Application Screenshots
 
 ### Homepage
-![Homepage](screenshots/homepage.png)
+![Homepage](public/gambar/homepage.png)
 
 ### Booking Page
-![Booking Page](screenshots/bookingpage.png)
+![Booking Page](public/gambar/bookingpage.png)
 
 ---
 
-## ✨ Features
+# 🏟️ Andi's Futsal - Futsal Court Booking App
 
-- User registration and authentication
-- Online futsal court booking
-- Real-time schedule management
-- Booking history
-- Payment confirmation
-- Admin dashboard
-- Transaction management
-- Customer data management
-
----
+A web-based application for booking futsal courts, built with Laravel.
 
 ## 🛠️ Tech Stack
+- PHP & Laravel
+- MySQL
+- Blade Template
+- Vite
 
-- **Backend:** PHP, Laravel
-- **Frontend:** Blade Template, Vite
-- **Database:** MySQL
-- **Styling:** CSS, Bootstrap
-- **Version Control:** Git, GitHub
+## ⚙️ How to Run the Project
 
----
-
-## ⚙️ Installation Guide
-
-### 1. Clone the Repository
-
+### 1. Clone the repository
 ```bash
 git clone https://github.com/SarifahMuliani/Booking-App.git
 cd Booking-App
+```
+
+### 2. Install dependencies
+```bash
+composer install
+npm install
+```
+
+### 3. Setup environment
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+### 4. Setup database
+- Create a MySQL database named `andisfutsal`
+- Import the `andisfutsal.sql` file
+- Update your database credentials in the `.env` file
+
+### 5. Run the application
+```bash
+npm run dev
+php artisan serve
+```
+
+### 6. Open in browser
+```
+http://localhost:8000
+```
