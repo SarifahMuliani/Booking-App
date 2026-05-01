@@ -13,7 +13,8 @@ A web-based futsal field booking application built with Laravel. This system all
 ---
 
 ## 🛠️ Tech Stack
-- PHP & Laravel
+- PHP 8.1
+- Laravel 10
 - MySQL
 - Blade Template
 - Vite
