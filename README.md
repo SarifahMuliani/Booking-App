@@ -10,7 +10,7 @@ A web-based futsal field booking application built with Laravel. This system all
 ![Homepage](public/gambar/homepage.png)
 
 ### Booking Page
-![Booking Page](public/gambar/bookingpage.png)
+![Booking Page](public/image/bookingpage.png)
 
 ---
 
