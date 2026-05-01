@@ -4,8 +4,6 @@ A web-based futsal field booking application built with Laravel. This system all
 
 ---
 
-## 📸 Application Screenshots
-
 ### Homepage
 ![Homepage](public/gambar/homepage.png)
 
@@ -13,10 +11,6 @@ A web-based futsal field booking application built with Laravel. This system all
 ![Booking Page](public/image/bookingpage.png)
 
 ---
-
-# 🏟️ Andi's Futsal - Futsal Court Booking App
-
-A web-based application for booking futsal courts, built with Laravel.
 
 ## 🛠️ Tech Stack
 - PHP & Laravel
