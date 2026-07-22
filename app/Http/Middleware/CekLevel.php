@@ -19,6 +19,14 @@ class CekLevel
     	if (in_array($request->user()->level, $levels)) {
     		return $next($request);
     	}
+
+    	if ($request->expectsJson()) {
+    		return response()->json([
+    			'success' => false,
+    			'message' => 'Akses ditolak. Anda tidak memiliki izin.',
+    		], 403);
+    	}
+
     	return redirect()->back();
     }
 }

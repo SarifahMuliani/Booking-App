@@ -19,8 +19,10 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
-        'email',
+        'username',
         'password',
+        'level',
+        'status_user',
     ];
 
     /**
@@ -39,6 +41,22 @@ class User extends Authenticatable
      * @var array<string, string>
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
+        'password' => 'hashed',
     ];
+
+    /**
+     * Get the rentals for the user.
+     */
+    public function dataSewa()
+    {
+        return $this->hasMany(\App\Models\DataSewa::class, 'id_user', 'id');
+    }
+
+    /**
+     * Get the user data / profile details.
+     */
+    public function dataUser()
+    {
+        return $this->hasOne(\App\Models\DataUser::class, 'user_id', 'id');
+    }
 }
